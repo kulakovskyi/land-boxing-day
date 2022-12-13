@@ -1,5 +1,6 @@
 .fav-page
   //a(href="https://www.favbet.com/uk/short-register/" target="_blank").main-link
+  .snow-section#snow-section
   .popup
     .popup__window
       .popup__window-close
@@ -12,11 +13,12 @@
           li Отримай 100 грн
     .popup__bg
   .boxing
-    .boxing__bgTop
+    .boxing__snow
     .boxing__logo
       img(src="img/logo.svg" alt="Favbet")
     .boxing__main
-      img(src="img/tottenham.png" alt="image").boxing__main-leftShirt
+      .boxing__main-img.boxing__main-imgLeft
+        img(src="img/tottenham.png" alt="image").boxing__main-leftShirt
       .boxing__main-center
         .team-wrap
           .team-wrap-date
@@ -35,8 +37,8 @@
           a(href="#").boxing__main-btn зроби ставку
           span.btn-snow
         .boxing__main-how Як активувати промокод
-      img(src="img/liverpool.png" alt="image").boxing__main-rightShirt
-    .boxing__bgBottom
+      .boxing__main-img.boxing__main-imgRight
+        img(src="img/liverpool.png" alt="image").boxing__main-rightShirt
   .footer
     .container
       .footer__bonus
@@ -46,7 +48,7 @@
           .footer__bonus-first-txt ставка #[br] без ризику
         .footer__bonus-second
           .footer__bonus-second-sum 4000₴
-          .footer__bonus-second-txt На перший депозит
+          .footer__bonus-second-txt На перший #[br] депозит
       .footer__icons
         .footer__icons-pay
           .footer__icons-icon18
