@@ -101,7 +101,7 @@ function GenerateSnow(options) {
     const _letItSnow = function () {
         interval = setInterval(function () {
             _snowingTurn();
-        }, 700);
+        }, 500);
     };
 
     self.settings = {};

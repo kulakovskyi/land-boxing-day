@@ -132,7 +132,7 @@ $font-din: DINPro-CondLight, sans-serif
     top: 50%
     transform: translateY(-50%)
     z-index: 1
-    animation: roadDeer 1200s ease infinite
+    animation: roadDeer 900s linear infinite
   &__legal
     background: $grey
     font-family: $font-din
@@ -439,21 +439,31 @@ $font-din: DINPro-CondLight, sans-serif
 
 .snowflake
   position: absolute
-  transition: all 2.5s linear
-
+  transition: top 2.5s linear, left 2.5s linear
 
 .snowflake.no-animate
   transition: none
-
 
 .snowflake-main
   background: #fff
   opacity: .8
   border-radius: 50%
-  &:nth-child(4n)
+  &:nth-child(3n)
     filter: blur(4px)
   &:nth-child(7n)
     filter: blur(9.5px)
+
+@media screen and (max-width: 600px) and (orientation: portrait)
+  .snowflake-main
+    transform: scale(0.6)
+    &:nth-child(2n)
+      display: none
+
+@media screen and (max-width: 920px) and (orientation: landscape) and (max-height: 450px)
+  .snowflake-main
+    transform: scale(0.6)
+    &:nth-child(2n)
+      display: none
 
 
 
@@ -463,6 +473,14 @@ $font-din: DINPro-CondLight, sans-serif
     transform: translateY(0)
   50%
     transform: translateY(30px)
+  100%
+    transform: translateY(0)
+
+@keyframes pulloverRoadMob
+  0%
+    transform: translateY(0)
+  50%
+    transform: translateY(10px)
   100%
     transform: translateY(0)
 
@@ -486,4 +504,4 @@ $font-din: DINPro-CondLight, sans-serif
   0%
     transform: translateY(-50%) translateX(0)
   100%
-    transform: translateY(-50%) translateX(-600%)
+    transform: translateY(-50%) translateX(-100%)

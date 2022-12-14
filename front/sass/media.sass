@@ -1,21 +1,36 @@
 @media screen and (min-width: 1921px)
   .boxing
-
     &__main
       &-center
         align-self: center
         margin: 90px 60px 0
 
-@media screen and (max-width: 1920px) and (max-height: 1000px)
+@media screen and (min-width: 2200px) and (max-height: 1170px)
   .boxing
     &__main
-      img
+      margin-top: -91px
+      &-img
+        width: 21%
+
+@media screen and (min-width: 2200px) and (max-height: 1035px)
+  .boxing
+    &__main
+      &-center
+        transform: scale(0.9)
+      &-img
+        width: 19%
+
+
+@media screen and (max-width: 1920px) and (max-height: 1050px)
+  .boxing
+    &__main
+      margin-top: -50px
+      &-center
+        transform: scale(0.9)
+      &-img
         width: 22%
-      &-wrap
-        margin: 70px 0 60px
-  .footer
-    min-height: 120px
-    height: 120px
+
+
 
 @media screen and (max-width: 1919px)
   .footer
@@ -34,83 +49,32 @@
           line-height: 24px
           width: 130px
       &-first
+        padding: 0 78px 0 0
         &:after
           width: 45px
           height: 37px
           margin-top: -5px
-      &-second
-        padding: 0 30px 0 65px
-    &__icons
-      &-pay
-        margin-right: 50px
-        div
-          &:not(.footer__icons-mastercard)
-            margin-right: 25px
-      &-icon18
-        width: 45px
-        height: 29px
-      &-applePay
-        width: 73px
-        height: 34px
-      &-googlePay
-        width: 70px
-        height: 28px
-      &-visa
-        width: 44px
-        height: 29px
-      &-mastercard
-        width: 44px
-        height: 26px
-      &-apple
-        width: 140px
-        height: 46px
-      &-google
-        width: 156px
-        height: 46px
 
-@media screen and (max-width: 1600px)
+@media screen and (max-width: 1700px)
   .boxing
-    .team-wrap
-      &:before
-        left: 37px
-        width: 70px
-        height: 35px
-      &-teams
-        font-size: 54px
-        line-height: 54px
-        .team-2
-          margin-top: 10px
-          .label
-            margin-top: 5px
-      &-date
-        width: 95px
-      &-day,
-      &-time
-        font-size: 24px
-        line-height: 24px
-        padding: 15px 5px 14px
+    &__main
+      &-img
+        width: 25%
+
+@media screen and (max-width: 1700px) and (max-height: 970px)
+  .boxing
+    &__main
+      &-center
+        transform: scale(0.85)
+      &-img
+        width: 22%
+
 
 @media screen and (max-width: 1600px) and (max-height: 900px)
   .footer
     bottom: 60px
-  .boxing
-    &__legal
-      height: 60px
-
-    &__main
-      &-center
-        margin: 0 60px 30px
-      &-wrap
-        margin: 50px 0 30px
-      &-code
-        font-size: 40px
-        line-height: 40px
-        padding: 20px 70px 15px
-      &-how
-        margin-top: 30px
-
-@media screen and (max-width: 1599px)
-  .footer
+    min-height: 85px
+    height: 85px
     &__bonus
       &-first,
       &-second
@@ -124,8 +88,32 @@
           &:not(.footer__icons-mastercard)
             margin-right: 15px
 
-@media screen and (max-width: 1536px) and (max-height: 780px)
   .boxing
+    &__legal
+      height: 60px
+    &__logo
+      width: 279px
+    &__main
+      &-center
+        transform: scale(0.8)
+        margin: 49px 9px 0
+      &-img
+        margin-top: 40px
+        width: 23%
+
+@media screen and (max-width: 1600px) and (max-height: 820px)
+  .boxing
+    &__main
+      &-center
+        transform: scale(0.78)
+        margin: 49px 0 0
+        .team-wrap
+          margin: 0 0 64px 0
+
+@media screen and (max-width: 1600px) and (max-height: 780px)
+  .boxing
+    &::before
+      height: 310px
     &__main
       .btn-snow
         width: 440px
@@ -136,11 +124,12 @@
         line-height: 26px
       &-wrap
         margin: 30px 0
-      img
-        margin-top: 70px
+      &-img
+        margin-top: 20px
         width: 20%
       &-center
         .team-wrap
+          margin: 0 0 34px 0
           &-teams
             font-size: 50px
             line-height: 50px
@@ -152,7 +141,13 @@
     min-height: 90px
     height: 90px
 
-@media screen and (max-width: 1440px)
+@media screen and (max-width: 1600px) and (max-height: 740px)
+  .boxing
+    &__main
+      &-center
+        transform: scale(0.73)
+
+@media screen and (max-width: 1470px)
   .popup
     &__window
       width: 550px
@@ -199,11 +194,13 @@
         line-height: 18px
         padding: 11px 3px 10px
     &__main
-      img
+      &-img
         width: 26%
         margin-top: 60px
       &-center
         margin: 0 50px 60px
+        .team-wrap
+          margin: 132px 0 15px 0
       &-wrap
         margin: 51px 0 47px
       &-title,
@@ -251,12 +248,10 @@
           width: 120px
           margin-left: 12px
       &-first
-        padding: 0 10px 0 0
+        padding: 0 67px 0 0
         &:after
           width: 40px
           height: 33px
-      &-second
-        padding: 0 20px 0 60px
     &__icons
       &-pay
         margin-right: 30px
@@ -264,17 +259,31 @@
           &:not(.footer__icons-mastercard)
             margin-right: 15px
 
-@media screen and (max-width: 1440px) and (max-height: 800px)
+@media screen and (max-width: 1470px) and (max-height: 870px)
+  .boxing
+    &::before
+      top: 41%
+    &__main
+      margin-top: -170px
+  .footer
+    position: absolute
+    width: 100%
+
+
+@media screen and (max-width: 1470px) and (max-height: 840px)
   .boxing
     &__main
-      &-center
-        margin-bottom: 30px
+      &-img
+        width: 23%
+        margin-top: 61px
+
 
 @media screen and (max-width: 1366px)
   .boxing
     &__main
       &-btn
         font-size: 16px
+        padding: 20px 78.5px 18px
       &-how
         font-size: 16px
       .btn-snow
@@ -302,8 +311,6 @@
           width: 35px
           height: 29px
           margin-top: -3px
-      &-second
-        padding: 0 20px 0 61px
     &__icons
       &-pay
         margin-right: 40px
@@ -333,12 +340,13 @@
         width: 122px
         height: 36px
 
-@media screen and (max-width: 1366px) and (max-height: 950px)
+@media screen and (max-width: 1366px) and (max-height: 770px)
   .boxing
     &__main
       &-center
-        align-self: center
-        margin: 50px 50px 0
+        margin: 0 50px 40px
+        transform: scale(0.87)
+
 
 @media screen and (max-width: 1366px) and (max-height: 740px)
   .boxing
@@ -349,12 +357,9 @@
         font-size: 38px
         line-height: 38px
     &__main
-      img
+      &-img
         width: 22%
         margin-top: 60px
-      &-center
-        align-self: flex-end
-        margin: 0 50px 20px
       &-wrap
         margin: 30px 0 20px
       &-code
@@ -364,6 +369,15 @@
   .footer
     min-height: 70px
     height: 70px
+
+@media screen and (max-width: 1366px) and (max-height: 670px)
+  .boxing
+    &__main
+      &-center
+        margin: 0 34px 40px
+        transform: scale(0.8)
+      &-img
+        width: 20%
 
 @media screen and (max-width: 1280px)
   .footer
@@ -375,7 +389,7 @@
 @media screen and (max-width: 1280px) and (max-height: 630px)
   .boxing
     &__main
-      img
+      &-img
         width: 20%
       .btn-snow
         width: 355px
@@ -463,13 +477,13 @@
           width: 80px
           margin-left: 8px
       &-first
-        padding: 0
+        padding: 0 54px 0 0
         &:after
+          right: 16px
           width: 28px
           height: 23px
           margin-top: -2px
-      &-second
-        padding: 0 10px 0 55px
+
 
 @media screen and (max-width: 1024px) and (orientation: landscape)
   .popup
@@ -489,10 +503,12 @@
             font-size: 18px
             line-height: 24px
   .boxing
+    &__logo
+      width: 216px
     &__main
-      img
-        width: 29.5%
-        margin-top: 10px
+      &-img
+        width: 27.5%
+        margin-top: 117px
       &-center
         margin: 50px 10px 0
       .team-wrap
@@ -507,19 +523,36 @@
       &-how
         font-size: 14px
 
+@media screen and (max-width: 1024px) and (max-height: 740px)
+  .boxing
+    &__logo
+      width: 200px
+
+    &__main
+      &-img
+        width: 26%
+        margin-top: 70px
+      &-center
+        margin: 0 30px 30px
+      &-wrap
+        margin-top: 20px
+
+
+/*************************************TABLET****************************************/
+
 @media screen and (max-width: 1024px) and (orientation: portrait)
   .boxing
     &__logo
       width: 330px
     &__main
-      img
-        width: 46%
-        margin-top: 300px
+      &-img
+        min-width: 43%
+        margin-top: 110px
       &-wrap
-        margin: 120px 0 140px
+        margin: 120px 0 170px
       &-center
         align-self: center
-        margin: 100px -30px 0
+        margin: -30px -30px 0
       .team-wrap
         &:before
           left: 37px
@@ -555,34 +588,22 @@
         font-size: 12px
         line-height: 16px
       &-btn
-        font-size: 18px
-        padding: 16px 40px 15px
+        font-size: 24px
+        padding: 30px 74px 28px
       &-how
         font-size: 14px
         margin-top: 36px
       .btn-snow
-        width: 350px
-        height: 50px
+        width: 400px
+        height: 59px
 
-@media screen and (max-width: 1024px) and (max-height: 740px)
+@media screen and (max-width: 1024px) and (orientation: portrait) and (max-height: 1140px)
   .boxing
-    &__logo
-      width: 200px
-
     &__main
-      img
-        width: 26%
-        margin-top: 70px
-      &-center
-        margin: 0 30px 30px
       &-wrap
-        margin-top: 20px
+        margin: 91px 0 118px
 
-@media screen and (max-width: 960px) and (max-height: 540px)
-  .boxing
-    &__main
-      &-center
-        margin-bottom: 10px
+
 
 @media screen and (max-width: 940px)
   .footer
@@ -634,24 +655,32 @@
       &-google
         width: 95px
         height: 28px
+  .boxing
+    &__logo
+      width: 276px
 
 @media screen and (max-width: 900px) and (orientation: portrait)
   .footer
     bottom: 40px
   .boxing
+    &::before
+      height: 281px
     &__legal
       height: 40px
+    &__main
+      &-img
+        min-width: 38%
 
 @media screen and (max-width: 768px) and (orientation: portrait)
   .boxing
-    &__logo
-      width: 276px
+    &__snow
+      width: 535px
+      top: 3px
     &__main
       &-center
         margin: 0 -70px 40px
-        align-self: flex-end
-      img
-        width: 47.5%
+      &-img
+        min-width: 36.5%
         margin-top: 157px
   .footer
     min-height: 65px
@@ -662,9 +691,6 @@
     &__logo
       width: 240px
     &__main
-      img
-        width: 40%
-        margin-top: 220px
       &-wrap
         margin: 70px 0 80px
       &-center
@@ -690,6 +716,22 @@
       &-google
         width: 75px
         height: 22px
+
+@media screen and (max-width: 750px) and (orientation: portrait) and (max-height: 1070px)
+  .boxing
+    &__main
+      &-btn
+        font-size: 22px
+        padding: 24px 67px 22px
+
+@media screen and (max-width: 715px) and (orientation: portrait)
+  .boxing
+    &__main
+      &-img
+        min-width: 34.5%
+
+
+/*************************************MOBILE****************************************/
 
 @media screen and (max-width: 710px) and (orientation: portrait)
   .fav-page
@@ -731,8 +773,8 @@
         z-index: 2
       &-wrap
         margin: 70px 0 64px
-      img
-        width: 49.5%
+      &-img
+        min-width: 49.5%
         margin-top: -80px
       .team-wrap
         &:before
@@ -760,6 +802,7 @@
     height: auto
     min-height: auto
     padding: 27px 0 40px
+    position: static
     .container
       flex-direction: column
       align-items: center
@@ -826,44 +869,57 @@
 
 @media screen and (max-width: 539px) and (orientation: portrait)
   .boxing
+    &::before
+      height: 210px
+      top: 36%
+    &__snow
+      width: 284px
     &__logo
       width: 175px
     &__main
       padding-top: 98px
       align-items: flex-start
-      img
-        width: 55%
-        top: 200px
+
+      &-leftShirt,
+      &-rightShirt
+        animation: pulloverRoadMob 6s ease infinite !important
+      &-img
+        min-width: 37%
+        top: 257px
         margin-top: 0
         flex-shrink: 0
-        position: absolute
+        &::before
+          bottom: -80px
+
         &:first-of-type
-          left: -50px
+          left: 118px
         &:last-of-type
-          right: -50px
+          right: 118px
       .btn-snow
         width: 349px
         height: 50px
       &-center
+        transform: scale(1)
         align-self: flex-start
         margin: 0
       &-wrap
-        margin: 44px 0 26px
+        margin: 44px 0 30px
         order: 3
       &-btnWrap
         order: 1
-        margin-top: 420px
+        margin-top: 336px
         z-index: 1
       &-btn
-        font-size: 16px
+        font-size: 18px
         width: 89%
-        padding: 18px 40px 17px
+        padding: 27px 40px 25px
         text-align: center
       &-how
         order: 2
         margin-top: 17px
         z-index: 1
       .team-wrap
+        margin: 164px 0 15px 0
         &:before
           top: -3px
           left: 28px
@@ -896,11 +952,29 @@
 @media screen and (max-width: 450px) and (orientation: portrait)
   .boxing
     &__main
-      img
+      &-img
         width: 197px
-        top: 187px
+        top: 260px
       &-btnWrap
-        margin-top: 308px
+        margin-top: 336px
+
+@media screen and (max-width: 450px) and (orientation: portrait) and (min-height: 890px)
+  .boxing
+    &__main
+      .team-wrap
+        margin: 42px 0 15px 0
+      &-img
+        top: 142px
+
+@media screen and (max-width: 390px) and (orientation: portrait)
+  .boxing
+    &__main
+      &-img
+        &:first-of-type
+          left: 138px
+        &:last-of-type
+          right: 138px
+
 
 @media screen and (max-width: 360px) and (orientation: portrait)
   .footer
@@ -932,19 +1006,18 @@
         width: 156px
         height: 46px
 
-@media screen and (max-width: 320px) and (orientation: portrait)
+@media screen and (max-width: 335px) and (orientation: portrait)
   .boxing
     &__logo
       width: 142px
     &__main
       padding-top: 86px
-      img
-        width: 184px
-        top: 167px
+      &-img
+        width: 156px
         &:first-of-type
-          left: -40px
+          left: 118px
         &:last-of-type
-          right: -40px
+          right: 118px
       &-wrap
         margin: 34px 0 10px
       &-btn
@@ -982,13 +1055,7 @@
           font-size: 12px
           line-height: 12px
 
-@media screen and (max-height: 450px) and (orientation: landscape)
-  .boxing
-    &__main
-      &-center
-        margin: 0 30px 20px
-
-@media screen and (max-width: 900px) and (orientation: landscape)
+@media screen and (max-width: 920px) and (orientation: landscape) and (max-height: 450px)
   .fav-page
     height: auto
   .popup
@@ -1013,17 +1080,26 @@
             line-height: 18px
             margin-bottom: 10px
   .boxing
+    &__snow
+      width: 375px
     height: auto
+    &::before
+      height: 131px
+      top: 53%
     &__legal
       height: 35px
     &__logo
       width: 150px
     &__main
-      padding-top: 30px
-      align-items: flex-start
-      img
-        margin-top: 40px
-        width: 22%
+      padding: 0
+      align-items: center
+      margin: 0
+      &-rightShirt,
+      &-leftShirt
+        animation: pulloverRoadMob 6s ease infinite !important
+      &-img
+        margin-top: 15px
+        width: 17%
       &-wrap
         margin: 35px 0 30px
       &-btn
@@ -1039,7 +1115,9 @@
         z-index: 1
       &-center
         align-self: flex-start
-        margin-bottom: 20px
+        margin: 0 30px 20px
+        .team-wrap
+          margin: 30px 0 15px 0
       &-title
         font-size: 12px
         line-height: 12px
@@ -1086,90 +1164,125 @@
           line-height: 14px
           padding: 7px 2px 6px
   .footer
+    position: absolute
+    width: 100%
     bottom: 35px
-
-@media screen and (max-height: 740px) and (orientation: landscape)
-  .footer
-    &__icons
-      &-pay
-        div
-          &:not(.footer__icons-mastercard)
-            margin-right: 7px
-      &-apple
-        width: 76px
-        height: 25px
-      &-google
-        width: 85px
-        height: 25px
-
-@media screen and (max-height: 670px) and (orientation: landscape)
-  .boxing
-    &__main
-      img
-        width: 25%
-        margin-top: 50px
-  .footer
     min-height: 45px
     height: 45px
-    &__bonus
-      &-first,
-      &-second
-        &-sum
-          font-size: 20px
-          line-height: 20px
-          letter-spacing: 0
-        &-txt
-          font-size: 8px
-          line-height: 10px
-          width: 60px
-      &-first
-        &:after
-          width: 20px
-          height: 17px
-          right: -22px
-      &-second
-        padding: 0 10px 0 32px
 
-@media screen and (max-height: 570px) and (orientation: landscape)
+@media screen and (max-width: 920px) and (orientation: landscape) and (max-height: 423px)
+  .boxing
+    &__main
+      background: url(../img/bg.jpg) no-repeat 0 40%/cover
+      &-center
+        transform: scale(0.7)
+        margin: -10px 30px -4px
+
+@media screen and (max-width: 920px) and (orientation: landscape) and (max-height: 390px)
   .boxing
     &__main
       &-center
-        margin: 0 10px 20px
-    &__legal
-      bottom: 29px
+        transform: scale(0.6)
+        margin: -30px 30px -14px
+
+@media screen and (max-width: 920px) and (orientation: landscape) and (max-height: 370px)
+  .boxing
+    &__main
+      &-img
+        margin-top: -40px
+      &-center
+        transform: scale(0.6)
+        margin: -38px 30px -14px
+
+@media screen and (max-width: 920px) and (orientation: landscape) and (max-height: 342px)
+  .boxing
+    &__main
+      &-img
+        width: 13%
+      &-center
+        transform: scale(0.5)
+        margin: -58px -21px -14px
+
+@media screen and (max-width: 920px) and (orientation: landscape) and (max-height: 306px)
+  .boxing
+    &::before
+      height: 76px
+      top: 43%
+    &__main
+      &-img
+        width: 10%
+      &-center
+        transform: scale(0.45)
+        margin: -79px -21px -14px
+
+@media screen and (max-width: 762px) and (orientation: landscape)
   .footer
-    min-height: 35px
-    height: 35px
-    bottom: 29px
-    .container
-      padding: 0 5px
     &__bonus
       &-first,
       &-second
         &-sum
-          font-size: 16px
-          line-height: 16px
+          font-size: 22px
+          line-height: 22px
         &-txt
-          font-size: 6px
-          line-height: 8px
-          width: 45px
-          margin-left: 5px
-      &-first
-        &:after
-          width: 15px
-          height: 12px
-          right: -14px
+          font-size: 8px
+          line-height: 11px
       &-second
-        padding: 0 10px 0 20px
+        padding: 0 10px 0 30px
+      &-first
+        &::after
+          right: -19px
+
+@media screen and (max-width: 717px) and (orientation: landscape)
+  .footer
     &__icons
       &-apple
-        width: 57px
-        height: 19px
+        width: 66px
+        height: 21px
       &-google
-        width: 65px
-        height: 19px
+        width: 70px
+        height: 21px
 
-@media screen and (max-height: 300px)
-  .boxing
-    &__main
-      padding-top: 20px
+@media screen and (max-width: 675px) and (orientation: landscape)
+  .footer
+    &__icons
+      &-icon18,
+      &-visa
+        width: 17px
+        height: 10px
+      &-applePay
+        width: 28px
+        height: 12px
+      &-googlePay
+        width: 28px
+        height: 11px
+      &-mastercard
+        width: 16px
+        height: 9px
+  .footer__icons-pay div:not(.footer__icons-mastercard)
+    margin-right: 7px
+
+@media screen and (max-width: 640px) and (orientation: landscape)
+  .footer
+    &__icons
+      position: relative
+      z-index: 3
+      &-pay
+        transform: scale(0.8)
+        margin-right: -1px
+    &__bonus
+      margin-right: -40px
+      &-first,
+      &-second
+        &-sum
+          font-size: 17px
+          line-height: 17px
+        &-txt
+          font-size: 7px
+          line-height: 10px
+      &-second
+        padding: 0 10px 0 12px
+      &-first
+        &::after
+          right: -5px
+          width: 18px
+          height: 14px
