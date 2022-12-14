@@ -42,12 +42,12 @@ const renderElements = (matches) => {
         }
     })
 
-    if (teamsFirst && teamsSecond && dateField && timeField && leftShirt && rightShirt && currentMatch) {
+    if (mainLink && teamsFirst && teamsSecond && dateField && timeField && leftShirt && rightShirt && currentMatch) {
         teamsFirst.innerHTML = currentMatch.team_a
         teamsSecond.innerHTML = `<div class="label"></div><span class="team-b">${currentMatch.team_b}</span>`
         dateField.innerHTML = currentMatch.date;
         timeField.innerHTML = currentMatch.time;
-        // mainLink.href = currentMatch.url;
+        mainLink.href = currentMatch.url;
         leftShirt.src = "img/" + currentMatch.shirtLeft;
         rightShirt.src = "img/" + currentMatch.shirtRight;
     }
